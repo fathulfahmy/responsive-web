@@ -1,4 +1,13 @@
-<html>
+<!-- declaration -->
+<!DOCTYPE html>
+<!-- set language -->
+<html lang="en">
+	<head>
+		<!-- browser behavior -->
+		<meta charset="UTF-8" />
+		<!-- page title -->
+		<title>Page title</title>
+	</head>
 	<body>
 		<main>
 			<!-- text -->
@@ -8,11 +17,10 @@
 
 			<!-- how to comment in html -->
 
-			<!-- self closing tag -->
+			<!-- img (self closing tag) -->
 			<img />
-			<!-- attribute -->
-			<!-- src fetch image from url -->
-			<!-- alt text if image is unavailable -->
+			<!-- src - fetch image from url -->
+			<!-- alt - text if image is unavailable -->
 			<img
 				src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" />
 			<img
@@ -24,12 +32,12 @@
 				<a href="https://freecodecamp.org"></a>
 				<!-- text to anchor element -->
 				<a href="https://www.freecodecamp.org">Open link here</a>
-				<!-- anchor element in text -->
 				<p>
 					Open link
+					<!-- words to anchor element -->
 					<a href="https://www.freecodecamp.org">here</a>
 				</p>
-				<!-- taget attribute -->
+				<!-- taget attribute - open url in new tab -->
 				<a href="https://www.freecodecamp.org" target="_blank">
 					Open link on a new tab
 				</a>
@@ -37,7 +45,7 @@
 
 			<section>
 				<p>Click image below</p>
-				<!-- anchor element in image -->
+				<!-- image to anchor element -->
 				<a href="https://www.freecodecamp.org">
 					<img
 						src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg"
@@ -78,9 +86,9 @@
 				<!-- action - submit to url -->
 				<form action="https://freecatphotoapp.com/submit-cat-photo"></form>
 
-				<!-- input self closing tag -->
-				<!-- name for action attribute -->
-				<!-- placeholder text in input box -->
+				<!-- input (self closing tag) -->
+				<!-- name - submit name to url(action) -->
+				<!-- placeholder - text in input box -->
 				<input
 					type="text"
 					name="catphotourl"
@@ -91,7 +99,7 @@
 				<button>Button</button>
 				<button type="submit">Submit button</button>
 
-				<!-- radio input -->
+				<!-- radio button -->
 				<input id="radiobtn" type="radio" />
 				Radio button (unlickable text)
 				<!-- label - clickable text -->
@@ -99,16 +107,48 @@
 					<input id="labelradiobtn" type="radio" />
 					Labelled radio button (clickable text)
 				</label>
-				<!-- same name attribute -->
-				<label>
-					<input id="option1" type="radio" name="opt1-opt2" />
-					Option 1
-				</label>
-				<label>
-					<input id="option2" type="radio" name="opt1-opt2" />
-					Option 2
-				</label>
+
+				<!-- fieldset - seperate to new line -->
+				<fieldset>
+					<!-- legend - caption to fielset element -->
+					<legend>Legend</legend>
+					<!-- same name attribute - user can only select either one -->
+					<label>
+						<!-- value - submit response to url(action) -->
+						<input
+							id="option1"
+							type="radio"
+							name="opt1-opt2"
+							value="option 1" />
+						Option 1
+					</label>
+					<label>
+						<input
+							id="option2"
+							type="radio"
+							name="opt1-opt2"
+							value="option 2" />
+						Option 2
+					</label>
+				</fieldset>
+
+				<fieldset>
+					<legend>Legend 2</legend>
+					<!-- checked (default value) -->
+					<input id="checkbox1" type="checkbox" checked="" />
+					Checkbox 1
+					<!-- wrap label around input -->
+					<label>
+						<input id="chekcbox2" type="checkbox" />
+						Checkbox 2
+					</label>
+					<!-- wrap label around text (text unclickable)-->
+					<input id="chekcbox3" type="checkbox" />
+					<label for="checkbox3">Checkbox 3</label>
+				</fieldset>
 			</section>
 		</main>
+		<!-- footer -->
+		<footer><p>Page footer</p></footer>
 	</body>
 </html>
