@@ -1,0 +1,15 @@
+h1 {
+	text-align: center;
+}
+body {
+	background-color: beige;
+}
+div {
+	background-color: white;
+}
+.form {
+	width: 50%;
+	/* center a div */
+	margin-left: auto;
+	margin-right: auto;
+}
