@@ -1,54 +1,118 @@
 <html>
+    <body>
+        <main>
+            <!-- text -->
+            <h1>Heading 1</h1>
+            <h2>Heading 2</h2>
+            <p>paragraph</p>
 
-<body>
-    <main>
-        <!-- text -->
-        <h1>Heading 1</h1>
-        <h2>Heading 2</h2>
-        <p>paragraph</p>
+            <!-- how to comment in html -->
 
-        <!-- how to comment in html -->
+            <!-- self closing tag -->
+            <img />
+            <!-- attribute -->
+            <!-- src fetch image from url -->
+            <!-- alt text if image is unavailable -->
+            <img
+                src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg"
+            />
+            <img
+                src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg"
+                alt="A cat"
+            />
 
-        <!-- self closing tag -->
-        <img>
-        <!-- attribute -->
-        <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg">
-        <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cat">
+            <!-- anchor element -->
+            <section>
+                <a href="https://freecodecamp.org"></a>
+                <!-- text to anchor element -->
+                <a href="https://www.freecodecamp.org">Open link here</a>
+                <!-- anchor element in text -->
+                <p>
+                    Open link <a href="https://www.freecodecamp.org"> here </a>
+                </p>
+                <!-- taget attribute -->
+                <a href="https://www.freecodecamp.org" target="_blank"
+                    >Open link on a new tab</a
+                >
+            </section>
 
-        <!-- anchor element -->
-        <section>
-            <a href='https://freecodecamp.org'></a>
-            <!-- text to anchor element -->
-            <a href="https://www.freecodecamp.org">Open link here</a>
-            <!-- anchor element in text -->
-            <p>
-                Open link <a href="https://www.freecodecamp.org"> here </a>
-            </p>
-            <!-- taget attribute -->
-            <a href="https://www.freecodecamp.org" target="_blank">Open link on a new tab</a>
-        </section>
+            <section>
+                <p>Click image below</p>
+                <!-- anchor element in image -->
+                <a href="https://www.freecodecamp.org"
+                    ><img
+                        src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg"
+                        alt="A cat."
+                /></a>
+            </section>
+            <section>
+                <!-- unordered list -->
+                <h2>Create list</h2>
+                <h3>Unordered list</h3>
+                <ul>
+                    <li>item 1</li>
+                    <li>item 2</li>
+                    <li>item 3</li>
+                </ul>
+                <!-- figure -->
+                <figure>
+                    <img
+                        src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg"
+                        alt="A lasagna"
+                    />
+                    <!-- caption -->
+                    <figcaption>
+                        Figure 1.0 Image of <strong>delicious</strong>
+                        <em>Lasagna</em>
+                    </figcaption>
+                </figure>
+                <!-- ordered list -->
+                <h3>Ordered list</h3>
+                <ol>
+                    <li>item 1</li>
+                    <li>item 2</li>
+                    <li>item 3</li>
+                </ol>
+            </section>
+            <section>
+                <!-- form element -->
+                <!-- action - submit to url -->
+                <form
+                    action="https://freecatphotoapp.com/submit-cat-photo"
+                ></form>
 
-        <section>
-            <p>Click image below</p>
-            <!-- anchor element in image -->
-            <a href="https://www.freecodecamp.org"><img
-                    src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cat."></a>
-        </section>
-        <section>
-            <h2>Create list</h2>
-            <h3>Unordered list</h3>
-            <ul>
-                <li>item 1</li>
-                <li>item 2</li>
-                <li>item 3</li>
-            </ul>
-            <figure>
-                <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg"
-                    alt="A lasagna">
-                    <figcaption>Figure 1.0 <em>Lasagna</em></figcaption>
-            </figure>
-        </section>
-    </main>
-</body>
+                <!-- input self closing tag -->
+                <!-- name for action attribute -->
+                <!-- placeholder text in input box -->
+                <input
+                    type="text"
+                    name="catphotourl"
+                    placeholder="text in input box"
+                    required=""
+                />
 
+                <!-- button -->
+                <button>Button</button>
+                <button type="submit">Submit button</button>
+
+                <!-- radio input -->
+                <input id="radiobtn" type="radio" />Radio button (unlickable
+                text)
+                <!-- label - clickable text -->
+                <label
+                    ><input id="labelradiobtn" type="radio" />Labelled radio
+                    button (clickable text)</label
+                >
+                <!-- same name attribute -->
+                <label
+                    ><input id="option1" type="radio" name="opt1-opt2" />Option
+                    1</label
+                >
+                <label
+                    ><input id="option2" type="radio" name="opt1-opt2" />Option
+                    2</label
+                >
+            </section>
+        </main>
+    </body>
 </html>
