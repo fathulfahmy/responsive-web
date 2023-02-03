@@ -3,26 +3,37 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
+		<!-- page title -->
 		<title>CatPhotoApp</title>
 	</head>
 	<body>
 		<main>
 			<h1>CatPhotoApp</h1>
+
+			<!-- gallery section -->
 			<section>
 				<h2>Cat Photos</h2>
-				<!-- TODO: Add link to cat photos -->
+				<!-- redirect to gallery -->
 				<p>
 					See more
-					<a target="_blank" href="https://freecatphotoapp.com">cat photos</a>
+					<a
+						target="_blank"
+						href="https://freecatphotoapp.com">
+						cat photos
+					</a>
 					in our gallery.
 				</p>
+				<!-- link image to url -->
 				<a href="https://freecatphotoapp.com">
 					<img
 						src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg"
 						alt="A cute orange cat lying on its back." />
 				</a>
 			</section>
+
+			<!-- list section -->
 			<section>
+				<!-- unordered list -->
 				<h2>Cat Lists</h2>
 				<h3>Things cats love:</h3>
 				<ul>
@@ -30,26 +41,34 @@
 					<li>laser pointers</li>
 					<li>lasagna</li>
 				</ul>
+
+				<!-- figure of lasagna -->
 				<figure>
 					<img
 						src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg"
 						alt="A slice of lasagna on a plate." />
+					<!-- caption -->
 					<figcaption>
 						Cats
 						<em>love</em>
 						lasagna.
 					</figcaption>
 				</figure>
+
+				<!-- ordered list -->
 				<h3>Top 3 things cats hate:</h3>
 				<ol>
 					<li>flea treatment</li>
 					<li>thunder</li>
 					<li>other cats</li>
 				</ol>
+
+				<!-- figure of cats -->
 				<figure>
 					<img
 						src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg"
 						alt="Five cats looking around a field." />
+					<!-- caption -->
 					<figcaption>
 						Cats
 						<strong>hate</strong>
@@ -57,11 +76,15 @@
 					</figcaption>
 				</figure>
 			</section>
+
+			<!-- form section -->
 			<section>
 				<h2>Cat Form</h2>
 				<form action="https://freecatphotoapp.com/submit-cat-photo">
+					<!-- first question -->
 					<fieldset>
 						<legend>Is your cat an indoor or outdoor cat?</legend>
+						<!-- option 1 -->
 						<label>
 							<input
 								id="indoor"
@@ -71,6 +94,7 @@
 								checked />
 							Indoor
 						</label>
+						<!-- option 2 -->
 						<label>
 							<input
 								id="outdoor"
@@ -80,8 +104,11 @@
 							Outdoor
 						</label>
 					</fieldset>
+
+					<!-- second question -->
 					<fieldset>
 						<legend>What's your cat's personality?</legend>
+						<!-- option 1 -->
 						<input
 							id="loving"
 							type="checkbox"
@@ -89,8 +116,14 @@
 							value="loving"
 							checked />
 						<label for="loving">Loving</label>
-						<input id="lazy" type="checkbox" name="personality" value="lazy" />
+						<!-- option 2 -->
+						<input
+							id="lazy"
+							type="checkbox"
+							name="personality"
+							value="lazy" />
 						<label for="lazy">Lazy</label>
+						<!-- option 3 -->
 						<input
 							id="energetic"
 							type="checkbox"
@@ -98,11 +131,16 @@
 							value="energetic" />
 						<label for="energetic">Energetic</label>
 					</fieldset>
+
+					<!-- submit photo -->
+
+					<!-- input url -->
 					<input
 						type="text"
 						name="catphotourl"
 						placeholder="cat photo URL"
 						required />
+					<!-- submit button -->
 					<button type="submit">Submit</button>
 				</form>
 			</section>
