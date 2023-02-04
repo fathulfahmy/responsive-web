@@ -1,7 +1,10 @@
 body {
 	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-h1, h2, h3, .marker {
+h1,
+h2,
+h3,
+.marker {
 	text-align: center;
 }
 
@@ -39,12 +42,12 @@ h1, h2, h3, .marker {
 		rgb(245, 62, 113),
 		rgb(162, 27, 27)
 	);
-    box-shadow: 0 0 20px 0 rgba(83, 14, 14, 0.8);
+	box-shadow: 0 0 20px 0 rgba(83, 14, 14, 0.8);
 }
 
 .green {
 	background: linear-gradient(#55680d, #71f53e, #116c31);
-    box-shadow: 0 0 20px 0 #3B7E20CC;
+	box-shadow: 0 0 20px 0 #3b7e20cc;
 }
 
 .blue {
@@ -53,7 +56,7 @@ h1, h2, h3, .marker {
 		hsl(223, 90%, 60%),
 		hsl(240, 56%, 42%)
 	);
-    box-shadow: 0 0 20px 0 hsla(223, 59%, 31%, 0.8);
+	box-shadow: 0 0 20px 0 hsla(223, 59%, 31%, 0.8);
 }
 /* PRIMARY COLOR */
 .primary_one {
