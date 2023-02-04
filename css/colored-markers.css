@@ -1,0 +1,146 @@
+body {
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+h1, h2, h3, .marker {
+	text-align: center;
+}
+
+.container {
+	background-color: rgb(255, 255, 255);
+	padding: 10px 0;
+}
+
+.marker {
+	width: 200px;
+	height: 25px;
+	margin: 10px auto;
+}
+/* 3-DIMENSIONAL MARKER*/
+.cap {
+	width: 60px;
+	height: 25px;
+}
+
+.sleeve {
+	width: 110px;
+	height: 25px;
+	background-color: rgba(255, 255, 255, 0.5);
+	border-left: 10px double rgba(0, 0, 0, 0.75);
+}
+
+.cap,
+.sleeve {
+	display: inline-block;
+}
+
+.red {
+	background: linear-gradient(
+		rgb(122, 74, 14),
+		rgb(245, 62, 113),
+		rgb(162, 27, 27)
+	);
+    box-shadow: 0 0 20px 0 rgba(83, 14, 14, 0.8);
+}
+
+.green {
+	background: linear-gradient(#55680d, #71f53e, #116c31);
+    box-shadow: 0 0 20px 0 #3B7E20CC;
+}
+
+.blue {
+	background: linear-gradient(
+		hsl(186, 76%, 16%),
+		hsl(223, 90%, 60%),
+		hsl(240, 56%, 42%)
+	);
+    box-shadow: 0 0 20px 0 hsla(223, 59%, 31%, 0.8);
+}
+/* PRIMARY COLOR */
+.primary_one {
+	background-color: rgb(255, 0, 0);
+	color: white;
+}
+.primary_two {
+	background-color: rgb(0, 255, 0);
+}
+.primary_three {
+	background-color: rgb(0, 0, 255);
+	color: white;
+}
+/* SECONDARY COLOR */
+/* yellow */
+.secondary_one {
+	background-color: rgb(255, 255, 0);
+}
+/* cyan */
+.secondary_two {
+	background-color: rgb(0, 255, 255);
+}
+/* magenta */
+.secondary_three {
+	background-color: rgb(255, 0, 255);
+	color: white;
+}
+/* TERTIARY COLOR */
+/* orange */
+.tertiary_one {
+	background-color: rgb(255, 127, 0);
+}
+/* spring green */
+.tertiary_two {
+	background-color: rgb(0, 255, 127);
+}
+/* violet */
+.tertiary_three {
+	background-color: rgb(127, 0, 255);
+	color: white;
+}
+/* MORE TERTIARY COLOR */
+/* chartreuse green */
+.more_tertiary_one {
+	background-color: rgb(127, 255, 0);
+}
+/* azure */
+.more_tertiary_two {
+	background-color: rgb(0, 127, 255);
+	color: white;
+}
+/* rose */
+.more_tertiary_three {
+	background-color: rgb(255, 0, 127);
+	color: white;
+}
+/* COMPLEMENTARY (opposite)*/
+
+.complementary_one {
+	background-color: rgb(255, 0, 0);
+	color: white;
+}
+.complementary_two {
+	background-color: rgb(0, 255, 255);
+}
+.complementary_three {
+	background-color: rgb(0, 0, 0);
+	color: white;
+}
+/* FUNCTION */
+
+.function_one {
+	/* 0-255 */
+	background-color: rgb(255, 0, 0);
+	color: white;
+}
+.function_two {
+	/* 0-9 and A-F */
+	background-color: #00ff00;
+}
+.function_three {
+	/* 0-360, 0-100, 0-100 */
+	background-color: hsl(240, 100%, 50%);
+	color: white;
+}
+.function_four {
+	/* degree, color color-stop, color color-stop, .. */
+	background: linear-gradient(90deg, rgb(255, 0, 0) 50%, rgb(0, 255, 0));
+	color: white;
+}
