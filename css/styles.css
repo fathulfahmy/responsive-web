@@ -7,21 +7,20 @@ body {
 }
 
 /* MAIN CONTAINER */
-.container{
-    margin: auto;
-    padding: 5% 10%;
-    width: 70%;
+.container {
+	margin: auto;
+	padding: 5% 10%;
+	width: 70%;
 }
 
 /* PROJECT SELECTION */
-.project{
-    width: 150px;
-    padding: 10px;
-    display: inline-block;
-    text-align: center;
+.project {
+	padding: 10px 50px 10px 0;
+	display: inline-block;
+	text-align: center;
 }
-.text{
-    margin-top: -10px;
+.text {
+	margin-top: -10px;
 }
 
 /* ANCHOR */
