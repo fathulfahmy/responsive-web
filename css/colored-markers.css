@@ -1,11 +1,18 @@
 body {
-	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 h1,
 h2,
 h3,
 .marker {
 	text-align: center;
+}
+h1,
+h2 {
+	font-weight: 900;
+}
+h3 {
+	font-weight: 500;
 }
 
 .container {
@@ -18,6 +25,7 @@ h3,
 	height: 25px;
 	margin: 10px auto;
 }
+
 /* 3-DIMENSIONAL MARKER*/
 .cap {
 	width: 60px;
@@ -36,7 +44,7 @@ h3,
 	display: inline-block;
 }
 
-.red {
+.realisticRed {
 	background: linear-gradient(
 		rgb(122, 74, 14),
 		rgb(245, 62, 113),
@@ -45,12 +53,12 @@ h3,
 	box-shadow: 0 0 20px 0 rgba(83, 14, 14, 0.8);
 }
 
-.green {
+.realisticGreen {
 	background: linear-gradient(#55680d, #71f53e, #116c31);
 	box-shadow: 0 0 20px 0 #3b7e20cc;
 }
 
-.blue {
+.realisticBlue {
 	background: linear-gradient(
 		hsl(186, 76%, 16%),
 		hsl(223, 90%, 60%),
@@ -58,91 +66,86 @@ h3,
 	);
 	box-shadow: 0 0 20px 0 hsla(223, 59%, 31%, 0.8);
 }
+
 /* PRIMARY COLOR */
-.primary_one {
+.red {
 	background-color: rgb(255, 0, 0);
 	color: white;
 }
-.primary_two {
+.green {
 	background-color: rgb(0, 255, 0);
 }
-.primary_three {
+.blue {
 	background-color: rgb(0, 0, 255);
 	color: white;
 }
+
 /* SECONDARY COLOR */
 /* yellow */
-.secondary_one {
+.yellow {
 	background-color: rgb(255, 255, 0);
 }
 /* cyan */
-.secondary_two {
+.cyan {
 	background-color: rgb(0, 255, 255);
 }
 /* magenta */
-.secondary_three {
+.magenta {
 	background-color: rgb(255, 0, 255);
 	color: white;
 }
+
 /* TERTIARY COLOR */
 /* orange */
-.tertiary_one {
+.orange {
 	background-color: rgb(255, 127, 0);
 }
 /* spring green */
-.tertiary_two {
+.spring-green {
 	background-color: rgb(0, 255, 127);
 }
 /* violet */
-.tertiary_three {
+.violet {
 	background-color: rgb(127, 0, 255);
 	color: white;
 }
-/* MORE TERTIARY COLOR */
 /* chartreuse green */
-.more_tertiary_one {
+.chartreuse-green {
 	background-color: rgb(127, 255, 0);
 }
 /* azure */
-.more_tertiary_two {
+.azure {
 	background-color: rgb(0, 127, 255);
 	color: white;
 }
 /* rose */
-.more_tertiary_three {
+.rose {
 	background-color: rgb(255, 0, 127);
 	color: white;
 }
-/* COMPLEMENTARY (opposite)*/
 
-.complementary_one {
-	background-color: rgb(255, 0, 0);
-	color: white;
-}
-.complementary_two {
-	background-color: rgb(0, 255, 255);
-}
-.complementary_three {
+/* COMPLEMENTARY (opposite)*/
+.black {
 	background-color: rgb(0, 0, 0);
 	color: white;
 }
-/* FUNCTION */
 
-.function_one {
+/* FUNCTION */
+.rgb-red {
 	/* 0-255 */
 	background-color: rgb(255, 0, 0);
 	color: white;
 }
-.function_two {
+.hex-green {
 	/* 0-9 and A-F */
 	background-color: #00ff00;
 }
-.function_three {
+.hsl-blue {
 	/* 0-360, 0-100, 0-100 */
 	background-color: hsl(240, 100%, 50%);
 	color: white;
 }
-.function_four {
+.gradient {
 	/* degree, color color-stop, color color-stop, .. */
 	background: linear-gradient(90deg, rgb(255, 0, 0) 50%, rgb(0, 255, 0));
 	color: white;
