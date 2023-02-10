@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
+		<title>Survey Form</title>
 	</head>
 	<body>
 		<!-- You should have a page title in an h1 element with an id of title -->
@@ -15,72 +15,143 @@
 		</p>
 		<!-- You should have a form element with an id of survey-form -->
 		<form id="survey-form" action="">
-			<!-- Inside the form element, you are required to enter your name in an input field 
+			<fieldset>
+				<!-- Inside the form element, you are required to enter your name in an input field 
                 that has an id of name and a type of text -->
-			<label for="name" id="name-label">
-				Name
-				<input type="text" id="name" placeholder="Enter your name" required />
-			</label>
-			<!-- Inside the form element, you are required to enter your email in an input field 
-                that has an id of email -->
-			<!-- If you enter an email that is not formatted correctly, you will see an HTML5 
-                    validation error -->
-			<label for="email" id="email-label">
-				Email
-				<input
-					type="email"
-					id="email"
-					placeholder="Enter your Email"
-					pattern="[A-Za-z]"
-					required
-				/>
-			</label>
-			<!-- Inside the form, you can enter a number in an input field that has an id of 
-                number -->
-			<!-- The number input should not accept non-numbers, either by preventing you from 
-                    typing them or by showing an HTML5 validation error (depending on your browser). -->
-			<!-- If you enter numbers outside the range of the number input, which are defined 
-                    by the min and max attributes, you will see an HTML5 validation error -->
-			<label for="number" id="number-label">
-				Age (optional)
-				<input
-					type="number"
-					id="number"
-					placeholder="Age"
-					min="13"
-					max="120"
-					required
-				/>
-			</label>
+				<label for="name" id="name-label">
+					Name
+					<input type="text" id="name" placeholder="Enter your name" required />
+				</label>
+				<!-- Inside the form element, you are required to enter your email in an input field 
+					that has an id of email -->
+				<!-- If you enter an email that is not formatted correctly, you will see an HTML5 
+						validation error -->
+				<label for="email" id="email-label">
+					Email
+					<input
+						type="email"
+						id="email"
+						placeholder="Enter your Email"
+						pattern="[A-Za-z]"
+						required
+					/>
+				</label>
+				<!-- Inside the form, you can enter a number in an input field that has an id of 
+					number -->
+				<!-- The number input should not accept non-numbers, either by preventing you from 
+						typing them or by showing an HTML5 validation error (depending on your browser). -->
+				<!-- If you enter numbers outside the range of the number input, which are defined 
+						by the min and max attributes, you will see an HTML5 validation error -->
+				<label for="number" id="number-label">
+					Age (optional)
+					<input
+						type="number"
+						id="number"
+						placeholder="Age"
+						min="13"
+						max="120"
+						required
+					/>
+				</label>
+			</fieldset>
 			<!-- For the name, email, and number input fields, you can see corresponding label 
                 elements in the form, that describe the purpose of each field with the following 
                 ids: id="name-label", id="email-label", and id="number-label" -->
 			<!-- For the name, email, and number input fields, you can see placeholder text that 
                 gives a description or instructions for each field -->
-
-			<!-- Inside the form element, you should have a select dropdown element with an id 
+			<fieldset>
+				<!-- Inside the form element, you should have a select dropdown element with an id 
                 of dropdown and at least two options to choose from -->
-			<label for="fav-feature">
-				What is your favorite feature of freeCodeCamp
-				<select name="fav-feature" id="fav-feature"></select>
-			</label>
-			<!-- Inside the form element, you can select an option from a group of at least two 
-                radio buttons that are grouped using the name attribute -->
-			<label for="">
-				<select name="" id="">
-					<option value=""></option>
-					<option value=""></option>
-					<option value=""></option>
-					<option value=""></option>
-				</select>
-			</label>
+				<label for="dropdown">
+					Which option best describe your current role?
+					<select name="dropdown" id="dropdown">
+						<option disabled>Select current role</option>
+						<option value="1">Student</option>
+						<option value="2">Full Time Job</option>
+						<option value="3">Full Time Learner</option>
+						<option value="3">Prefer not to say</option>
+						<option value="3">Other</option>
+					</select>
+				</label>
+				<!-- Inside the form element, you can select an option from a group of at least two 
+					radio buttons that are grouped using the name attribute -->
+				<label for="recommend">
+					Would you recommend free CodeCamp to a friend?
+					<input type="radio" value="definitely" name="recommend" />
+					Definitely
+					<input type="radio" value="maybe" name="recommend" />
+					Maybe
+					<input type="radio" value="not-sure" name="recommend" />
+					Not sure
+				</label>
 
-			<!-- Inside the form element, you can select several fields from a series of 
+				<label for="fav-feature">
+					What is your favorite feature of freeCodeCamp?
+					<select name="fav-feature" id="fav-feature">
+						<option disabled>Select an option</option>
+						<option value="1">Challenges</option>
+						<option value="2">Projects</option>
+						<option value="3">Community</option>
+						<option value="3">Open Source</option>
+					</select>
+				</label>
+			</fieldset>
+
+			<fieldset>
+				<!-- Inside the form element, you can select several fields from a series of 
                 checkboxes, each of which must have a value attribute -->
-			<!-- Inside the form element, you are presented with a textarea for additional 
+				<label for="suggestion">
+					<input type="checkbox" name="improvement" value="front-end" />
+					Front-End Projects
+					<input type="checkbox" name="improvement" value="back-end" />
+					Back-End Projects
+					<input
+						type="checkbox"
+						name="improvement"
+						value="data-visualization"
+					/>
+					Data Visualization
+					<input type="checkbox" name="improvement" value="challenges" />
+					Challenges
+					<input
+						type="checkbox"
+						name="improvement"
+						value="open-source-community"
+					/>
+					Open Source Community
+					<input type="checkbox" name="improvement" value="gitter-help-room" />
+					Gitter Help Room
+					<input type="checkbox" name="improvement" value="videos" />
+					Videos
+					<input type="checkbox" name="improvement" value="city-meetups" />
+					City Meetups
+					<input type="checkbox" name="improvement" value="wiki" />
+					Wiki
+					<input type="checkbox" name="improvement" value="forum" />
+					Forum
+					<input
+						type="checkbox"
+						name="improvement"
+						value="additional-courses"
+					/>
+					Additional Courses
+				</label>
+				<!-- Inside the form element, you are presented with a textarea for additional 
                 comments -->
-			<!-- Inside the form element, you are presented with a button with id of submit 
+				<label for="suggestion">
+					Any comments or suggestions?
+					<textarea
+						placeholder="Enter your comment here..."
+						name="suggestion"
+						id="suggestion"
+						cols="30"
+						rows="10"
+					></textarea>
+				</label>
+				<!-- Inside the form element, you are presented with a button with id of submit 
                 to submit all the inputs -->
+			</fieldset>
+			<input type="submit" id="submit" value="Submit" />
 		</form>
 	</body>
 </html>
