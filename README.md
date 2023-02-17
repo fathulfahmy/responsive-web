@@ -1,2 +1,2 @@
 #  What I've learned!
-https://fathulfahmyyy.github.io/responsive-web/
+https://patuicode.github.io/responsive-web/
