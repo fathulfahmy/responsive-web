@@ -1,4 +1,7 @@
 /* color palette: https://colorhunt.co/palette/10a19d540375ff7000ffbf00 */
+* {
+	box-sizing: border-box;
+}
 
 body {
 	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -9,24 +12,23 @@ body {
 	margin: 0;
 }
 
-/* MAIN CONTAINER */
-.container {
-	width: 70%;
-	min-width: 300px;
-	margin: 0 auto;
-	padding-top: 50px;
-}
-
 /* PROJECT SELECTION */
 .project {
-	padding: 10px 50px 10px 0;
-	display: inline-block;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	gap: 16px;
+	margin: 0 auto;
+	padding: 20px 10px;
 }
 
-.text {
-	margin-top: -10px;
+.project::after {
+	content: "";
+	width: 350px;
 }
-
 /* ANCHOR */
 a {
 	color: white;
